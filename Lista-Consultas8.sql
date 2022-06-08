@@ -12,7 +12,7 @@ begin
 	 	loop
 		 	fetch cursor_relatorio into l_nome_agencia, l_ativo_agencia;
 		 	if found then
-		 		if l_ativo is null then l_ativo_agencia = 0; end if;
+		 		if l_ativo_agencia is null then l_ativo_agencia = 0; end if;
 		 		update agencia set ativo_agencia = l_ativo_agencia
 		 		where nome_agencia = l_nome_agencia;
 		 	end if;
@@ -35,6 +35,8 @@ update agencia set ativo_agencia = 0;
 
 
 select * from agencia;
+
+
 
 
 
