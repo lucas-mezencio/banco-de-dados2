@@ -44,8 +44,11 @@ where saldo_deposito > 10000;
 
 --INSERIR NOVOS DEPOSITOS NO BANCO DE DADOS
 
+select * from deposito 
+
 INSERT INTO DEPOSITO
 VALUES (10000, 20000,  'PUC', 'Carlos Eduardo', 1200);
+-- tem que preencher as chaves estrangeiras
 
 --INCLUIR PARA TODOS OS CLIENTES COM EMPRESTIMOS NA AGENCIA PUC
 --UMA CONTA DE DEPÓSITO NO VALOR DE R$ 200,00.
